@@ -1,0 +1,35 @@
+{
+  "name": "spring-bloom-vancouver",
+  "displayName": "Spring Bloom in Vancouver",
+  "description": "A soft, cherry-blossom light theme inspired by spring streets in Vancouver. Creamy daylight background, blossom pink keywords, grass-green strings, and sky-blue types.",
+  "version": "1.0.0",
+  "publisher": "iammrait",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Themes"],
+  "icon": "icon.png",
+  "keywords": [
+    "vancouver",
+    "spring",
+    "cherry blossom",
+    "light theme",
+    "pink",
+    "pastel"
+  ],
+  "homepage": "https://mrait.ca/spring-bloom",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iammrait/spring-bloom-vancouver"
+  },
+  "license": "MIT",
+  "contributes": {
+    "themes": [
+      {
+        "label": "Spring Bloom in Vancouver",
+        "uiTheme": "vs",
+        "path": "./themes/spring-bloom-color-theme.json"
+      }
+    ]
+  }
+}
