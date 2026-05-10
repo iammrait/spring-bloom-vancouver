@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Validate theme JSON
+        run: python3 -c "import json; json.load(open('themes/spring-bloom-color-theme.json', encoding='utf-8')); print('theme JSON OK')"
+
+      - name: Package extension
+        run: npx --yes @vscode/vsce package --no-dependencies

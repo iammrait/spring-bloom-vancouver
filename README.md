@@ -6,7 +6,7 @@ A cherry-blossom light theme for VS Code, Cursor, and Antigravity.
 
 ## Screenshots
 
-_Screenshots coming soon._ Add captures of your editor with sample code (TypeScript, Markdown, HTML) to show the palette in context.
+Capture assets and filenames are documented in [docs/screenshots/README.md](docs/screenshots/README.md). Drop PNGs there and reference them from this section when you are ready to show the theme on the registry.
 
 ## Palette
 
@@ -34,33 +34,57 @@ _Screenshots coming soon._ Add captures of your editor with sample code (TypeScr
 
 ### VS Code / Cursor (Open VSX)
 
-When published, install from Open VSX:
+After the extension is **published** to Open VSX, install from the registry:
 
 1. Open the **Extensions** view.
-2. Use the Open VSX registry or marketplace link: [Open VSX — iammrait.spring-bloom-vancouver](https://open-vsx.org/extension/iammrait/spring-bloom-vancouver) _(placeholder until live)._
+2. Open [Spring Bloom in Vancouver on Open VSX](https://open-vsx.org/extension/iammrait/spring-bloom-vancouver). Until the first publish completes, that page may not exist yet.
 3. Search for **Spring Bloom in Vancouver** and install.
 
 ### Manual `.vsix` install
 
-1. Package the extension (see repository docs): `vsce package --no-dependencies`
+1. From the repository root, package the extension: `vsce package --no-dependencies`
 2. In VS Code / Cursor: **Extensions** → **⋯** menu → **Install from VSIX…**
 3. Select `spring-bloom-vancouver-1.0.0.vsix`.
 
-### Google Antigravity & other Open VSX IDEs
+### Google Antigravity and other Open VSX IDEs
 
-Any editor that supports Open VSX or VS Code–compatible themes can load this extension the same way as VS Code (marketplace or VSIX).
+Any editor that supports Open VSX or VS Code–compatible themes can load this extension the same way as VS Code (registry or VSIX).
 
 ## Activate
 
 1. **Command Palette** → `Preferences: Color Theme`
 2. Choose **Spring Bloom in Vancouver**
 
+## Maintainer / release
+
+1. Bump `"version"` in [package.json](package.json) when you ship a new release.
+2. Add an entry to [CHANGELOG.md](CHANGELOG.md) under the new version.
+3. Package: `vsce package --no-dependencies` (or `npx @vscode/vsce package --no-dependencies` without a global install).
+4. Commit, tag if you use tags, and push to `main`.
+
+## Publish to Open VSX
+
+Publishing uses a **personal access token** from [Open VSX](https://open-vsx.org/). Do not commit the token.
+
+1. Install the CLI: `npm install -g ovsx` or use `npx ovsx` for one-off runs.
+2. Build the VSIX: `vsce package --no-dependencies`
+3. Publish (PowerShell):
+
+```powershell
+$env:OVSX_TOKEN = "<your-token-here>"
+ovsx publish spring-bloom-vancouver-1.0.0.vsix
+```
+
+Or pass the token once: `ovsx publish spring-bloom-vancouver-1.0.0.vsix -p $env:OVSX_TOKEN`
+
+After the listing is live, confirm the Open VSX link in **Links** below resolves.
+
 ## Links
 
 - **Homepage / theme page:** [mrait.ca/spring-bloom](https://mrait.ca/spring-bloom)
 - **Repository:** [github.com/iammrait/spring-bloom-vancouver](https://github.com/iammrait/spring-bloom-vancouver)
 - **Author site:** [mrait.ca](https://mrait.ca)
-- **Open VSX:** [open-vsx.org/extension/iammrait/spring-bloom-vancouver](https://open-vsx.org/extension/iammrait/spring-bloom-vancouver)
+- **Open VSX:** [open-vsx.org/extension/iammrait/spring-bloom-vancouver](https://open-vsx.org/extension/iammrait/spring-bloom-vancouver) (available after first publish)
 
 ## License
 
