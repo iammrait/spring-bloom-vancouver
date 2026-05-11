@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.2] – Branding
+
+- Package `author` URL and README **About** / **Links** now include [X profile @iammrait](https://x.com/iammrait).
+
 ## [1.0.1] – Screenshots
 
 - README screenshots (TypeScript, Markdown, HTML) as palette-accurate demo assets in `docs/screenshots/`; regenerate with `docs/screenshots/generate_screenshots.py` (requires Pillow).

@@ -2,6 +2,10 @@
 
 A cherry-blossom light theme for VS Code, Cursor, and Antigravity.
 
+## About
+
+**Publisher:** [iammrait](https://github.com/iammrait) · **X (Twitter):** [@iammrait](https://x.com/iammrait) · **Site:** [mrait.ca](https://mrait.ca)
+
 <!-- Design inspiration: This theme is drawn from spring afternoons on Vancouver streets where cherry blossoms arch over sidewalks—soft pink petals against blue sky, cream and white house facades in gentle daylight, green lawns, and dark tree trunks for grounding contrast. The palette stays airy and calm: blossom pinks for structure and emphasis, sky blue for types, grass green for strings, and warm bark browns for readable body text—joyful without neon saturation. -->
 
 ## Screenshots
@@ -51,7 +55,7 @@ Install from the Open VSX registry:
 
 1. From the repository root, package the extension: `vsce package --no-dependencies`
 2. In VS Code / Cursor: **Extensions** → **⋯** menu → **Install from VSIX…**
-3. Select `spring-bloom-vancouver-1.0.1.vsix` (version matches [package.json](package.json)).
+3. Select `spring-bloom-vancouver-1.0.2.vsix` (version matches [package.json](package.json)).
 
 ### Google Antigravity and other Open VSX IDEs
 
@@ -81,10 +85,10 @@ The `ovsx` CLI reads **`OVSX_PAT`**, or you can pass **`-p`** / **`--pat`** expl
 
 ```powershell
 $env:OVSX_PAT = "<your-token-here>"
-ovsx publish spring-bloom-vancouver-1.0.1.vsix
+ovsx publish spring-bloom-vancouver-1.0.2.vsix
 ```
 
-Or pass the token once: `ovsx publish spring-bloom-vancouver-1.0.1.vsix -p $env:OVSX_PAT`
+Or pass the token once: `ovsx publish spring-bloom-vancouver-1.0.2.vsix -p $env:OVSX_PAT`
 
 Use a **new version** in `package.json` before publishing an update so Open VSX accepts the upload.
 
@@ -92,6 +96,7 @@ Use a **new version** in `package.json` before publishing an update so Open VSX 
 
 - **Homepage / theme page:** [mrait.ca/spring-bloom](https://mrait.ca/spring-bloom)
 - **Repository:** [github.com/iammrait/spring-bloom-vancouver](https://github.com/iammrait/spring-bloom-vancouver)
+- **Author / X:** [@iammrait on X](https://x.com/iammrait)
 - **Author site:** [mrait.ca](https://mrait.ca)
 - **Open VSX:** [open-vsx.org/extension/iammrait/spring-bloom-vancouver](https://open-vsx.org/extension/iammrait/spring-bloom-vancouver)
 
