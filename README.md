@@ -34,11 +34,10 @@ Capture assets and filenames are documented in [docs/screenshots/README.md](docs
 
 ### VS Code / Cursor (Open VSX)
 
-After the extension is **published** to Open VSX, install from the registry:
+Install from the Open VSX registry:
 
-1. Open the **Extensions** view.
-2. Open [Spring Bloom in Vancouver on Open VSX](https://open-vsx.org/extension/iammrait/spring-bloom-vancouver). Until the first publish completes, that page may not exist yet.
-3. Search for **Spring Bloom in Vancouver** and install.
+1. Open the **Extensions** view (or your IDE’s Open VSX integration).
+2. Open **[Spring Bloom in Vancouver on Open VSX](https://open-vsx.org/extension/iammrait/spring-bloom-vancouver)** and install, or search for **Spring Bloom in Vancouver**.
 
 ### Manual `.vsix` install
 
@@ -79,14 +78,14 @@ ovsx publish spring-bloom-vancouver-1.0.0.vsix
 
 Or pass the token once: `ovsx publish spring-bloom-vancouver-1.0.0.vsix -p $env:OVSX_PAT`
 
-After the listing is live, confirm the Open VSX link in **Links** below resolves.
+Use a **new version** in `package.json` before publishing an update so Open VSX accepts the upload.
 
 ## Links
 
 - **Homepage / theme page:** [mrait.ca/spring-bloom](https://mrait.ca/spring-bloom)
 - **Repository:** [github.com/iammrait/spring-bloom-vancouver](https://github.com/iammrait/spring-bloom-vancouver)
 - **Author site:** [mrait.ca](https://mrait.ca)
-- **Open VSX:** [open-vsx.org/extension/iammrait/spring-bloom-vancouver](https://open-vsx.org/extension/iammrait/spring-bloom-vancouver) (available after first publish)
+- **Open VSX:** [open-vsx.org/extension/iammrait/spring-bloom-vancouver](https://open-vsx.org/extension/iammrait/spring-bloom-vancouver)
 
 ## License
 
