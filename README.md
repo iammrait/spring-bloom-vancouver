@@ -6,7 +6,15 @@ A cherry-blossom light theme for VS Code, Cursor, and Antigravity.
 
 ## Screenshots
 
-Capture assets and filenames are documented in [docs/screenshots/README.md](docs/screenshots/README.md). Drop PNGs there and reference them from this section when you are ready to show the theme on the registry.
+Demo captures use the theme palette (generated assets in this repo). The Open VSX page ships the README without the `docs/` folder, so images use **raw GitHub URLs** so they render in the registry.
+
+| TypeScript | Markdown |
+|------------|----------|
+| ![TypeScript preview](https://raw.githubusercontent.com/iammrait/spring-bloom-vancouver/main/docs/screenshots/typescript.png) | ![Markdown preview](https://raw.githubusercontent.com/iammrait/spring-bloom-vancouver/main/docs/screenshots/markdown.png) |
+
+![HTML preview](https://raw.githubusercontent.com/iammrait/spring-bloom-vancouver/main/docs/screenshots/html.png)
+
+To regenerate PNGs or replace them with real editor captures, see [docs/screenshots/README.md](docs/screenshots/README.md).
 
 ## Palette
 
@@ -43,7 +51,7 @@ Install from the Open VSX registry:
 
 1. From the repository root, package the extension: `vsce package --no-dependencies`
 2. In VS Code / Cursor: **Extensions** → **⋯** menu → **Install from VSIX…**
-3. Select `spring-bloom-vancouver-1.0.0.vsix`.
+3. Select `spring-bloom-vancouver-1.0.1.vsix` (version matches [package.json](package.json)).
 
 ### Google Antigravity and other Open VSX IDEs
 
@@ -73,10 +81,10 @@ The `ovsx` CLI reads **`OVSX_PAT`**, or you can pass **`-p`** / **`--pat`** expl
 
 ```powershell
 $env:OVSX_PAT = "<your-token-here>"
-ovsx publish spring-bloom-vancouver-1.0.0.vsix
+ovsx publish spring-bloom-vancouver-1.0.1.vsix
 ```
 
-Or pass the token once: `ovsx publish spring-bloom-vancouver-1.0.0.vsix -p $env:OVSX_PAT`
+Or pass the token once: `ovsx publish spring-bloom-vancouver-1.0.1.vsix -p $env:OVSX_PAT`
 
 Use a **new version** in `package.json` before publishing an update so Open VSX accepts the upload.
 

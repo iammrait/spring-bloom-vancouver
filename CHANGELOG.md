@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.1] – Screenshots
+
+- README screenshots (TypeScript, Markdown, HTML) as palette-accurate demo assets in `docs/screenshots/`; regenerate with `docs/screenshots/generate_screenshots.py` (requires Pillow).
+
 ## [1.0.0] – Initial release
 
 - Full workbench UI coverage (editor, tabs, activity bar, side bar, panels, terminal, status bar, scrollbars, git decorations, peek view, minimap).
