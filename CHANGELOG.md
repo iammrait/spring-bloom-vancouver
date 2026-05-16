@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.3] – README cleanup
+
+- Moved publish/maintainer instructions out of README into `CONTRIBUTING.md` (excluded from VSIX so they don't appear on the registry page).
+
 ## [1.0.2] – Branding
 
 - Package `author` URL and README **About** / **Links** now include [X profile @iammrait](https://x.com/iammrait).
