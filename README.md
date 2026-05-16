@@ -55,7 +55,7 @@ Install from the Open VSX registry:
 
 1. From the repository root, package the extension: `vsce package --no-dependencies`
 2. In VS Code / Cursor: **Extensions** → **⋯** menu → **Install from VSIX…**
-3. Select `spring-bloom-vancouver-1.0.2.vsix` (version matches [package.json](package.json)).
+3. Select the `.vsix` file you just packaged.
 
 ### Google Antigravity and other Open VSX IDEs
 
